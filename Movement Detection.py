@@ -1,12 +1,11 @@
 import cv2
 import numpy as np
 cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
+# for capturing video from saved file
 ##cap = cv2.VideoCapture('c:/samples/vtest.avi')
 
 ret,frame1 = cap.read()
 ret,frame2 = cap.read()
-
-
 
 while cap.isOpened():
     diff = cv2.absdiff(frame1,frame2)
