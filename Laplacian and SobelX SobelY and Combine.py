@@ -17,12 +17,9 @@ canny = cv2.Canny(img,100,200)
 
 titles = ['Orginal Image','lap','sobelX','sobelY','sobelcombined','canny']
 images = [img,lap,sobelX,sobelY,sobelcombined,canny]
-
 for i in range(len(images)):
     plt.subplot(2,3 ,i+1)
     plt.imshow(images[i],'gray')
     plt.title(titles[i])
     plt.xticks([]),plt.yticks([])
-
-
 plt.show()
