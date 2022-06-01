@@ -1,10 +1,7 @@
 import cv2
 import numpy as np
-
 img = cv2.imread('c:/samples/shapes.jpg')
-
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-
 _, trash = cv2.threshold(gray, 200, 255,cv2.THRESH_BINARY)
 
 contors, _ = cv2.findContours(trash, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
