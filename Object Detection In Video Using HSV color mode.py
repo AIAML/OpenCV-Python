@@ -4,7 +4,6 @@ import numpy as np
 def nothing(x):
     pass
 
-
 cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 cv2.namedWindow("Tracking")
 cv2.createTrackbar("LH","Tracking",0,255,nothing)
