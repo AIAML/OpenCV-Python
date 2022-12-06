@@ -9,7 +9,6 @@ cap.set(3,720)
 #set height video
 cap.set(4,720)
 
-
 # it must be noted that original size of video must be written correctly because it is not shown in video player
 while(cap.isOpened()):
     ret,frame = cap.read()
@@ -23,7 +22,6 @@ while(cap.isOpened()):
 
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
-
 cap.release()
 out.release()
 cv2.destroyAllWindows()
