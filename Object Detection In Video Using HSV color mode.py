@@ -11,8 +11,6 @@ cv2.createTrackbar("LV","Tracking",0,255,nothing)
 cv2.createTrackbar("UH","Tracking",255,255,nothing)
 cv2.createTrackbar("US","Tracking",255,255,nothing)
 cv2.createTrackbar("UV","Tracking",255,255,nothing)
-
-
 while True:
     _,frame = cap.read()
 
