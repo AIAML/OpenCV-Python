@@ -21,6 +21,4 @@ for i in range(len(images)):
     plt.imshow(images[i],'gray')
     plt.title(titles[i])
     plt.xticks([]),plt.yticks([])
-
-
 plt.show()
