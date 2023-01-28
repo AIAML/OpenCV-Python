@@ -6,8 +6,6 @@ fourcc = cv2.VideoWriter_fourcc(*'XVID')
 #fourcc = cv2.VideoWriter_fourcc('X','V','I','D')
 #out = cv2.VideoWriter("output.avi",fourcc,20,(1280,528))
 #set width video
-
-
 # it must be noted that original size of video must be written correctly because it is not shown in video player
 while(cap.isOpened()):
     ret,frame = cap.read()
@@ -16,8 +14,6 @@ while(cap.isOpened()):
         print(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         datet = str(datetime.datetime.now())
         frame = cv2.putText(frame,datet,(200,50),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),2,cv2.LINE_AA)
-
-
         cv2.imshow("Test",frame)
 
 
