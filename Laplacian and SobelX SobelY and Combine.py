@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
+
+
 img = cv2.imread("c:/samples/sudoku.png",cv2.IMREAD_GRAYSCALE)
 lap = cv2.Laplacian(img, cv2.CV_64F,ksize=3)
 lap = np.uint8(np.absolute(lap))
