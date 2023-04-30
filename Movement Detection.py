@@ -16,8 +16,6 @@ while cap.isOpened():
 
     dilated = cv2.dilate(thresh,None,iterations=3)
     contours,_ = cv2.findContours(dilated,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-
-
     for c in contours:
         (x,y,w,h) = cv2.boundingRect(c)
         if cv2.contourArea(c) < 900:
